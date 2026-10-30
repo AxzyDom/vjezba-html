@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vježba 11 - Forma</title>
+</head>
+<body>
+
+    <h2>Registracijska forma</h2>
+
+    <form action="#" method="POST">
+        <label for="ime">Ime:</label><br>
+        <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime" required><br><br>
+
+        <label for="lozinka">Lozinka:</label><br>
+        <input type="password" id="lozinka" name="lozinka" required><br><br>
+
+        <label>Spol:</label><br>
+        <input type="radio" id="musko" name="spol" value="musko">
+        <label for="musko">Muški</label><br>
+        <input type="radio" id="zensko" name="spol" value="zensko">
+        <label for="zensko">Ženski</label><br><br>
+
+        <label>Zanimanja:</label><br>
+        <input type="checkbox" id="hobi1" name="hobi1" value="Sport">
+        <label for="hobi1"> Sport</label><br>
+        <input type="checkbox" id="hobi2" name="hobi2" value="Glazba">
+        <label for="hobi2"> Glazba</label><br><br>
+
+        <label for="grad">Grad:</label><br>
+        <select id="grad" name="grad">
+            <option value="zagreb">Zagreb</option>
+            <option value="velika_gorica">Velika Gorica</option>
+            <option value="split">Split</option>
+        </select><br><br>
+
+        <label for="poruka">Poruka:</label><br>
+        <textarea id="poruka" name="poruka" rows="4" cols="30" placeholder="Unesite poruku..."></textarea><br><br>
+
+        <input type="submit" value="Pošalji">
+    </form>
+
+</body>
+</html>
