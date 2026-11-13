@@ -2,89 +2,109 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEGO Vježba 12</title>
+    <title>Moja prva stranica – Header</title>
     <style>
+        /* reset osnovnih margina i paddinga */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* osnovni stil za stranicu */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            background-color: #f0f0f0;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        /* header dio stranice */
+        header {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 20px;
+            padding: 10px;
         }
-        .hero-banner {
-            background-color: #f7d117;
-            position: relative;
-            padding: 20px;
-        }
-        .logo {
-            background-color: #e3000b;
-            color: white;
-            font-weight: bold;
-            padding: 8px 15px;
-            display: inline-block;
-            font-size: 20px;
-            border-radius: 4px;
-        }
-        .banner-image {
+
+        /* banner unutar headera */
+        .banner img {
             width: 100%;
-            height: auto;
             display: block;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        /* navigacija ispod bannera */
+        nav {
+            background-color: #333333;
+            padding: 8px;
             margin-top: 10px;
         }
-        .navbar {
-            background-color: #222;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
+
+        /* lista u navigaciji */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
-        .navbar a {
-            color: white;
+
+        li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        /* linkovi u navigaciji */
+        a {
             text-decoration: none;
-            padding: 8px 20px;
-            margin: 0 5px;
-            border: 1px solid #444;
-            background-color: #333;
+            color: white;
+            border: 1px solid white;
+            padding: 5px 12px;
             font-size: 14px;
         }
-        .navbar a:hover {
-            background-color: #555;
+
+        /* glavni sadržaj */
+        main {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin: 0 20px 20px 20px;
+            padding: 10px;
         }
-        .footer {
-            padding: 10px 20px;
+
+        /* tekst u mainu */
+        main p {
+            line-height: 1.5;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
             font-size: 12px;
-            color: #666;
-            background-color: #fff;
-            border-top: 1px solid #eee;
+            color: #555555;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="hero-banner">
-        <div class="logo">LEGO</div>
-        <img src="slika.jpg" alt="LEGO Slika" class="banner-image">
-    </div>
+    <header>
+        <div class="banner">
+            <img src="lego_banner.jpg" alt="Lego">
+        </div>
 
-    <div class="navbar">
-        <a href="#">Početna</a>
-        <a href="#">O nama</a>
-        <a href="#">Usluge</a>
-        <a href="#">Kontakt</a>
-    </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Početna</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Usluge</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="footer">
-        Ovdje će doći sadržaj podnožja stranice.
-    </div>
-</div>
+    <main>
+        <p>Ovdje će ići ostatak sadržaja stranice.</p>
+    </main>
 
+    <footer>
+        &copy; Tvoje ime i prezime
+    </footer>
 </body>
 </html>
-```[cite: 1]
